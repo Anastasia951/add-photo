@@ -213,19 +213,35 @@
           </div>
           <div class="footer-down">
             <p>Наши социцальные сети:</p>
-            <a class="icon-inst"></a>
-            <a class="icon-facebook"></a>
-            <a class="icon-twitter"></a>
-            <a class="icon-telegram"></a>
+            <div class="footer__social">
+              <a class="icon-inst"></a>
+              <a class="icon-facebook"></a>
+              <a class="icon-twitter"></a>
+              <a class="icon-telegram"></a>
+            </div>
           </div>
         </div>
       </footer>
 
       <!--MODALS-->
-      <div class="modal" data-parent="consult">
-        <div class="modal__body">
-          <h1>MODAL TITLE</h1>
-          <div class="modal-close" data-close>close</div>
+      <div class="modal modal-get-consult" data-parent="consult">
+        <div class="modal__body modal-get-consult__body">
+          <div class="modal-get-consult__content">
+            <div class="modal-get-consult__image">
+              <img src="assets/modals/main-modal.png" alt="" />
+            </div>
+            <form action="/" class="contacts__form form-contacts">
+              <h2 class="form-contacts__title">Форма обратной связи</h2>
+              <p>Имя</p>
+              <input type="text" placeholder="Введите ваше имя" />
+              <p>E-mail</p>
+              <input type="email" placeholder="Введите ваш E-mail" />
+              <p>Телефон</p>
+              <input type="tel" placeholder="Введите ваше Телефон" />
+              <input type="submit" class="button-orange" />
+            </form>
+          </div>
+          <div class="modal-close" data-close></div>
         </div>
       </div>
     </div>

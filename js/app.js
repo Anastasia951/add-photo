@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   initBurger()
-  // initModals()
+  initModals()
 })
 
 const initBurger = () => {
