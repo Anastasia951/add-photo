@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   initBurger()
   initModals()
+  initHideTextBlockBtns()
 })
 
 const initBurger = () => {
@@ -12,6 +13,16 @@ const initBurger = () => {
     menu.classList.toggle('show')
     document.body.classList.toggle('lock')
   })
+}
+const hideTextBlocks = () => {
+  const btn = event.target
+  const textBlock = btn.closest('[data-text-block]')
+  const hiddenText = textBlock.querySelector('[data-hidden-text]')
+  hiddenText.classList.toggle('text-block__hidden-none')
+}
+const initHideTextBlockBtns = () => {
+  const hideTextBlockBtns = document.querySelectorAll('[data-open-text-block]')
+  hideTextBlockBtns.forEach(btn => btn.addEventListener('click', hideTextBlocks))
 }
 
 const initModals = () => {
