@@ -28,3 +28,8 @@ a {
 .header, .footer {
   flex: 0 0 auto;
 }
+input, textarea {
+  font-size: inherit;
+  font-family: inherit;
+  outline: none;
+}
